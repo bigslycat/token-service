@@ -1261,7 +1261,7 @@ dependencies = [
 
 [[package]]
 name = "token-service"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "actix-web 0.7.18 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.32.0 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -30,8 +30,10 @@ use routes::{delete_token, get_token, set_token};
 use state::{AppConfig, AppState};
 
 fn main() -> Result<(), MainError> {
-    let matches = clap::App::new("token-service")
+    let matches = clap::App::new(env!("CARGO_PKG_NAME"))
         .version(env!("CARGO_PKG_VERSION"))
+        .author(env!("CARGO_PKG_AUTHORS"))
+        .about(env!("CARGO_PKG_DESCRIPTION"))
         .arg(
             clap::Arg::with_name("host")
                 .long("host")
